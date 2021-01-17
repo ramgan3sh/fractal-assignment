@@ -1,0 +1,98 @@
+#app-header {
+    text-align: center;
+    height: auto;
+    background-color: rgba(0,0,0,0.3);
+}
+
+#app-header h2, #app-header p {
+    margin: 0;
+}
+
+#category-list {
+    list-style: none;
+    margin: auto;
+    width: 60%;
+}
+
+#category-list li {
+    padding: 10px;
+    background: #7c9473;
+    color: white;
+    margin-bottom: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#category-list li:last-child {
+    background: #12a17e;
+    text-align: center;
+}
+
+#category-list li:last-child:hover {
+    background: #09b388;
+    text-align: center;
+}
+
+#category-list li:hover {
+    background: #79a16b;
+}
+
+#todo-list {
+    list-style: none;
+    margin: auto;
+    width: 60%;
+}
+
+#todo-list li {
+    padding: 10px;
+    background: #7c9473;
+    color: white;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#todo-list li p {
+    width: 80%;
+    margin: 0;
+}
+
+#todo-list li.done {
+    background-color: #3d4739;
+    color: grey;
+}
+
+#todo-list li.done p {
+    text-decoration: line-through;
+}
+
+#todo-list li p:focus {
+    outline: none;
+}
+
+#todo-list li svg:not(#todo-list li.done) {
+    cursor: pointer;
+    color: #eff7e1;
+}
+
+#todo-list svg:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+#todo-list li:last-child {
+    background: #12a17e;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+}
+
+#todo-list li:last-child:not(.done):hover {
+    background: #09b388;
+}
+
+#todo-list li:not(.done):hover {
+    background: #79a16b;
+}
